@@ -59,51 +59,13 @@ public class MainActivity extends Activity {
 
         lista.setAdapter(arrayAdapter);
 
-
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String posicao = arrayAdapter.getItem(position);
 
-                if (signos[0] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[0],Toast.LENGTH_LONG).show();
-                }
-                if (signos[1] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[1],Toast.LENGTH_LONG).show();
-                }
-                if (signos[2] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[2],Toast.LENGTH_LONG).show();
-                }
-                if (signos[3] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[3],Toast.LENGTH_LONG).show();
-                }
-                if (signos[4] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[4],Toast.LENGTH_LONG).show();
-                }
-                if (signos[5] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[5],Toast.LENGTH_LONG).show();
-                }
-                if (signos[6] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[6],Toast.LENGTH_LONG).show();
-                }
-                if (signos[7] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[7],Toast.LENGTH_LONG).show();
-                }
-                if (signos[8] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[8],Toast.LENGTH_LONG).show();
-                }
-                if (signos[9] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[9],Toast.LENGTH_LONG).show();
-                }
-                if (signos[10] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[10],Toast.LENGTH_LONG).show();
-                }
-                if (signos[11] == posicao){
-                    Toast.makeText(getApplicationContext(),descricao[11],Toast.LENGTH_LONG).show();
-                }
-
-
+                    Toast.makeText(getApplicationContext(),descricao[position],Toast.LENGTH_LONG).show();
             }
         });
     }
